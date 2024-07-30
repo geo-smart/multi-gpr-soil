@@ -1,13 +1,60 @@
-# Sample Project
+# multi-gpr-soil
 
-This is an example of how teams can structure their project repositories and format their project README.md file.
+## Multi-target Gaussian Process Regression for Three-Dimensional Mapping: a geology test case in Seattle, WA
 
-When creating a project repository from this template choose "Public" so other participants can follow progress. Add a "topic" to your repository details (click on the gear icon next to the "About" section on the repository page) to help others find your work (e.g. `icesat2-hackweek-2024`).
+The purpose of this project is to develop a multi-target Gaussian Process Regression (GPR) model to predict engineering soil classification and soil layering in three dimensions. We will use a dataset of past subsurface investigations from Seattle, WA, to train and test the model. The project offers opportunities to explore gaussian processes, multi-target regression, machine learning model training and evaluation, two- and three-dimensional geospatial data management and visualization, Dask parallelization, and more. Enthusiastic team members of all experience and skill levels are welcome to join this project! 
 
+### Collaborators
 
-## Files and folders in your project repository
+| Name | Personal goals | Can help with | Role |
+| ------------- | ------------- | ------------- | ------------- |
+| Morgan S. | I want to work towards three-dimensional ML predictions  | I can help with understanding our dataset, methods, programming in python  | Project Lead |
+| ... | ... | ... | ... |
+| ... | ... | ... | ... |
 
-This template provides the following suggested organizaiton structure for the project repository, but each project team is free to organize their repository as they see fit.
+### The problem
+
+Subsurface geological data is essential for a variety of engineering and environmental applications, including site characterization, geotechnical engineering, and groundwater modeling. In dense urban areas, such as Seattle, many subsurface investigations have been performed in past projects that could be leveraged to inform conceptual infrastructure design, urban planning, augment modern subsurface investigations, and more. Traditional methods for site soil classification and layering in three dimensions involve manual interpretation of borehole logs and other available surface and subsurface data. Machine learning methods, such as Gaussian Process Regression, offer a way to automate this process and provide predictions at a higher resolution than traditional methods. In this project, we will develop a multi-target Gaussian Process Regression model to predict engineering soil classification and soil layering in three dimensions.
+
+## Data and Methods
+
+### Data
+
+The Washington State Department of Natural Resources (DNR) maintains a databse of various geologic data for the state, including geology maps, lidar surveys, subsurface investigations, and more. This data is accessible through an interactive web application called the [Geologic Information Portal](https://www.dnr.wa.gov/geologyportal) and is available for [download](https://www.dnr.wa.gov/programs-and-services/geology/publications-and-data/gis-data-and-databases). For this project, we will focus on the borehole logs within the subsurface investigations dataset. The borehole logs contain information about the soil layers and engineering soil classification at various depths, and we will be using the USCS soil classification data to train and test our model. Depending on time and computing restraints, we may limit model implementation to a small region around the University of Washington.
+
+### Existing methods
+
+Traditional methods for predicting soil classification and layering in three dimensions involve manual interpretation of borehole logs and geophysical surveys. Machine learning methods, such as Gaussian Process Regression, offer a way to automate this process and provide predictions at a higher resolution than traditional methods. Gaussian Process Regression is a non-parametric method that can be used for regression and classification tasks, and it is particularly useful for modeling spatial data. In this project, we will use a multi-target Gaussian Process Regression model to predict soil classification and layering in three dimensions.
+
+### Proposed methods/tools
+
+We will train a [multi-target Gaussian Process Regression model](https://link.springer.com/article/10.1007/s10994-022-06170-3) for the city of Seattle, and publish the model in a way so that it can be used by others.
+
+We will create a [model card](model-card.md) for the machine learning model used in this project in accordance with the [Hugging Face model card standard](https://huggingface.co/model-cards).
+
+### Optional exploratory and background information for reference
+
+As time and interest allow, you may explore the following resources in preparation for (and/or during) the hackweek:
+* Familiarize yourself with the available subsurface investigation data via the [Geologic Information Portal](https://www.dnr.wa.gov/geologyportal).
+* Introduce yourself to [Gaussian Process Regression](https://link.springer.com/article/10.1007/s10994-022-06170-3). 
+* Learn about multi-target regression and [multi-output Gaussian Process Regression](https://link.springer.com/article/10.1007/s10994-022-06170-3).
+* Check back for more in the coming weeks!
+
+## Project goals and tasks
+
+### Project goals
+
+**TBD!!**
+
+### Tasks
+
+**TBD!!**
+
+## Project Results
+
+**TBD!!**
+
+## Files and folders in this project repository
 
 * **`contributors/`**
 <br> Each team member can create their own folder under contributors, within which they can work on their own scripts, notebooks, and other files. Having a dedicated folder for each person helps to prevent conflicts when merging with the main branch. This is a good place for team members to start off exploring data and methods for the project.
@@ -23,77 +70,3 @@ This template provides the following suggested organizaiton structure for the pr
 <br> Description of the project (see suggested headings below)
 * `model-card.md`
 <br> Description (following a metadata standard) of any machine learning models used in the project
-
-# Recommended content for your README.md file:
-
-(you can remove the content here and above from your final project README.md file so that it begins with the Project or Team Name title below)
-
-# Project or Team Name
-
-## Project Title and Introduction
-
-Provide a brief introduction describing the proposed work. Be sure to also decribe what skills team members will get to learn and practice as part of this project.
-
-### Collaborators
-
-List all participants on the project. Here is a good space to share your personal goals for the hackweek and things you can help with.
-
-| Name | Personal goals | Can help with | Role |
-| ------------- | ------------- | ------------- | ------------- |
-| Katherine J. | I want to learn specific python libraries for working with these data  | I can help with understanding our dataset, programming in R  | Project Lead |
-| Rosalind F. | Practice leading a software project | machine learning and python (scipy, scikit-learn) | Project Lead |
-| Alan T. | learning about your dataset | GitHub, Jupyter, cloud computing | Project Helper |
-| Rachel C. | learn to use github, resolve merge conflicts | I am familiar with our dataset | Team Member  |
-| ... | ... | ... | ... |
-| ... | ... | ... | ... |
-
-### The problem
-
-Provide a few sentences describing the problem are you going to explore. If this is a technical exploration of software or data science methods, explain why this work is important in a broader context and specific applications of this work.
-
-## Data and Methods
-
-### Data
-
-Briefly describe and provide citations for the data that will be used (size, format, how to access).
-
-### Existing methods
-
-How would you or others traditionally try to address this problem? Provide any relevant citations to prior work.
-
-### Proposed methods/tools
-
-What new approaches would you like to implement for addressing your specific question(s) or application(s)?
-
-Will your project use machine learning methods? If so, we invite you to create a [model card](model-card.md)!
-
-### Additional resources or background reading
-
-Optional: links to manuscripts or technical documents providing background information, context, or other relevant information.
-
-## Project goals and tasks
-
-### Project goals
-
-List the specific project goals or research questions you want to answer. Think about what outcomes or deliverables you'd like to create (e.g. a series of tutorial notebooks demonstrating how to work with a dataset, results of an anaysis to answer a science question, an example of applying a new analysis method, or a new python package).
-
-* Goal 1
-* Goal 2
-* ...
-
-### Tasks
-
-What are the individual tasks or steps that need to be taken to achieve each of the project goals identified above? What are the skills that participants will need or will learn and practice to complete each of these tasks? Think about which tasks are dependent on prior tasks, or which tasks can be performed in parallel.
-
-* Task 1 (all team members will learn to use GitHub)
-* Task 2 (team members will use the scikit-learn python library)
-  * Task 2a (assigned to team member A)
-  * Task 2b (assigned to team member B)
-* Task 3
-* ...
-
-## Project Results
-
-Use this section to briefly summarize your project results. This could take the form of describing the progress your team made to answering a research question, developing a tool or tutorial, interesting things found in exploring a new dataset, lessons learned for applying a new method, personal accomplishments of each team member, or anything else the team wants to share.
-
-You could include figures or images here, links to notebooks or code elsewhere in the repository (such as in the [notebooks](notebooks/) folder), and information on how others can run your notebooks or code.
