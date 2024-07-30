@@ -28,7 +28,7 @@ Traditional methods for predicting soil classification and layering in three dim
 
 ### Proposed methods/tools
 
-We will train a [multi-target Gaussian Process Regression model](https://link.springer.com/article/10.1007/s10994-022-06170-3) for the city of Seattle, and publish the model in a way so that it can be used by others.
+We will train a [multi-target Gaussian Process Regression model](https://link.springer.com/article/10.1007/s10994-022-06170-3) for the city of Seattle, and publish the model in a way so that it can be used by others.  
 
 We will create a [model card](model-card.md) for the machine learning model used in this project in accordance with the [Hugging Face model card standard](https://huggingface.co/model-cards).
 
