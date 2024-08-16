@@ -37,10 +37,10 @@ We will create a [model card](model-card.md) for the machine learning model used
 ### Optional exploratory and background information for reference
 
 As time and interest allow, you may explore the following resources in preparation for (and/or during) the hackweek:
-* Familiarize yourself with the available subsurface investigation data via the [Geologic Information Portal](https://www.dnr.wa.gov/geologyportal).
-* Introduce yourself to [Gaussian Process Regression](https://link.springer.com/article/10.1007/s10994-022-06170-3). 
-* Learn about multi-target regression and [multi-output Gaussian Process Regression](https://link.springer.com/article/10.1007/s10994-022-06170-3).
-* Check back for more in the coming weeks!
+1. Familiarize yourself with the available subsurface investigation data via the [Geologic Information Portal](https://www.dnr.wa.gov/geologyportal).
+2. Use the `1-data-access.ipynb` notebook to download and explore the subsurface investigation data.
+3. Introduce yourself to [Gaussian Process Regression](https://scikit-learn.org/stable/modules/gaussian_process.html#gaussian-process-regression-gpr). 
+4. Learn about multi-target regression and [multi-output Gaussian Process Regression](https://link.springer.com/article/10.1007/s10994-022-06170-3).
 
 ## Project goals and tasks
 
