@@ -109,3 +109,4 @@ venv.bak/
 *.hdf5
 *.nc
 *.tif
+*.zip
