@@ -22,6 +22,8 @@ Subsurface geological data is essential for a variety of engineering and environ
 
 The Washington State Department of Natural Resources (DNR) maintains a databse of various geologic data for the state, including geology maps, lidar surveys, subsurface investigations, and more. This data is accessible through an interactive web application called the [Geologic Information Portal](https://www.dnr.wa.gov/geologyportal) and is available for [download](https://www.dnr.wa.gov/programs-and-services/geology/publications-and-data/gis-data-and-databases). For this project, we will focus on the borehole logs within the subsurface investigations dataset. The borehole logs contain information about the soil layers and engineering soil classification at various depths, and we will be using the USCS soil classification data to train and test our model. Depending on time and computing restraints, we may limit model implementation to a small region around the University of Washington.
 
+![image](/figures/screenshots/dnr_ui.png)  
+
 ### Existing methods
 
 Traditional methods for predicting soil classification and layering in three dimensions involve manual interpretation of borehole logs and geophysical surveys. Machine learning methods, such as Gaussian Process Regression, offer a way to automate this process and provide predictions at a higher resolution than traditional methods. Gaussian Process Regression is a non-parametric method that can be used for regression and classification tasks, and it is particularly useful for modeling spatial data. In this project, we will use a multi-target Gaussian Process Regression model to predict soil classification and layering in three dimensions.
