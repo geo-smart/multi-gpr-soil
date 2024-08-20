@@ -11,7 +11,7 @@ The purpose of this project is to develop a multi-target Gaussian Process Regres
 | Morgan S. | I want to work towards three-dimensional ML predictions  | I can help with understanding our dataset, methods, programming in python  | Project Lead |
 | Mansa K. | I want to learn and gain more experience with Gaussian Process Regression. | I can help with Python programming, version control (git), and general machine learning techniques | Hackweek Helper |
 | Steven P. | I want to learn about Gaussian Process Regression and about Seattle subsurface geology! | I can help with git and python | Team Member |
-| Brendan M. | I would like some exposure to ML techniques | I can help with vibes and training and standardizing the model | Team Member | test
+| Brendan M. | I would like some exposure to ML techniques | I can help with vibes and training and standardizing the model | Team Member |
 
 ### The problem
 
