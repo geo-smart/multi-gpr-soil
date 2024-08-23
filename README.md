@@ -49,7 +49,10 @@ As time and interest allow, you may explore the following resources in preparati
 
 ### Project goals
 
-**TBD!!**
+* Gaussian Processes!
+* Multi-target ML! (classification & regression!)
+* 3D visualization!
+* Parallelization!
 
 ### Tasks
 
