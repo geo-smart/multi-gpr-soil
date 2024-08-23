@@ -53,7 +53,29 @@ As time and interest allow, you may explore the following resources in preparati
 
 ### Tasks
 
-**TBD!!**
+* Monday:
+  * GitHub (edit README table of team members)
+  * run notebook 1 (data access)
+* Tuesday & Wednesday:
+  * re-run notebook 1 and notebook 2 (data access and predictor sampling)
+  * GPR Tutorial (Mansa)
+  * sci-kit learn GPR (on small toy dataset of UW campus area)
+    * notebook 2: sample predictors
+    * notebook 3: sci-kit GPR
+      * notebook 3.1: classify-soil
+      * notebook 3.2: regress-thickness
+  * pytorch GPR - notebook 4
+    * for multi-output, 2D
+  * custom loss function for classifier
+* Thursday & Friday:
+  * dask parallelization (of pytorch?)
+  * improve model performance?
+    * additional predictors (e.g. geomorphon, VS30)
+    * hyperparameter tuning
+    * cross-validation
+    * class imbalance
+  * custom loss function implementation
+  * Seattle-scale implementation / visualization 
 
 ## Project Results
 
